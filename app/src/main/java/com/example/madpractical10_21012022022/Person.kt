@@ -2,7 +2,6 @@ package com.example.madpractical10_21012022022
 
 import org.json.JSONObject
 import java.io.Serializable
-
 class Person (jsonObject: JSONObject) :Serializable {
     var id:String
     var Name: String
@@ -11,7 +10,6 @@ class Person (jsonObject: JSONObject) :Serializable {
     var Address: String
     var Latitude: Double
     var Longitude:Double
-
     init {
         id = jsonObject.getString("id")
         EmailId = jsonObject.getString("email")
@@ -23,7 +21,6 @@ class Person (jsonObject: JSONObject) :Serializable {
         Latitude = locationJson.getDouble("lat")
         Longitude = locationJson.getDouble("long")
     }
-
     override fun toString(): String {
         return "$Name\n$PhoneNo\n$EmailId\n$Address\nlat:$Latitude\nlog:$Longitude"
     }

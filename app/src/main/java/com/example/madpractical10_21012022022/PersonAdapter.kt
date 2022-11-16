@@ -11,12 +11,10 @@ import java.io.Serializable
 class PersonAdapter (private val context: Context, private val array:ArrayList<Person>):
     RecyclerView.Adapter<PersonAdapter.PersonViewHolder>() {
     inner class PersonViewHolder(val binding: PersonItemViewBinding): RecyclerView.ViewHolder(binding.root)
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PersonViewHolder {
         val binding = PersonItemViewBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return PersonViewHolder(binding)
     }
-
     override fun onBindViewHolder(holder: PersonViewHolder, position: Int) {
         with(holder){
             with(array[position]){
@@ -30,12 +28,10 @@ class PersonAdapter (private val context: Context, private val array:ArrayList<P
                         putExtra("Object",obj)
                         this@PersonAdapter.context.startActivity(this)
                     }
-                    //Toast.makeText(this@PersonAdapter.context, "Clicked on "+binding.textViewName+", Location: Lat:"+this.Latitude+"Long:"+this.Longitude, Toast.LENGTH_SHORT).show()
                 }
             }
         }
     }
-
     override fun getItemCount(): Int {
         return array.size
     }

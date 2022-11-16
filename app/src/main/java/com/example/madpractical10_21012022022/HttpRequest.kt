@@ -51,5 +51,4 @@ class HttpRequest {
         }
         return sb.toString()
     }
-
 }
