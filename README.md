@@ -26,7 +26,6 @@ Use Databinding in gradle file to easy way integrate xml into kotlin file
 
 Use Material 3 design for UI
 
-![Screenshot_2022_11_16_18_51_36_242_com_example_madpractical10_21012022022](https://user-images.githubusercontent.com/110646988/202193378-3a970265-03f2-4387-8461-d645bc871ab2.jpg)
 
 
 ![Screenshot_2022_11_16_18_52_03_248_com_example_madpractical10_21012022022](https://user-images.githubusercontent.com/110646988/202193402-e0c4a6bd-13bf-471a-bba7-ed943cf2220b.jpg)
